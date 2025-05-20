@@ -1,0 +1,76 @@
+/* Custom styles for US Stock News website */
+
+/* Navbar styles */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Card styles */
+.card {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+/* News item styles */
+.news-item {
+    transition: background-color 0.2s ease;
+    border-left: 4px solid transparent;
+}
+
+.news-item:hover {
+    background-color: #f8f9fa;
+    border-left-color: #0d6efd;
+}
+
+.news-item .news-time {
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
+.news-item .news-source {
+    font-size: 0.875rem;
+    color: #0d6efd;
+}
+
+.news-item .news-symbol {
+    font-weight: bold;
+    color: #198754;
+}
+
+/* Loading spinner overlay */
+#loadingSpinner {
+    background-color: rgba(255,255,255,0.8);
+    z-index: 1050;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+/* Toast customization */
+.toast {
+    min-width: 300px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .col-md-3 {
+        margin-bottom: 1rem;
+    }
+    
+    .news-item {
+        padding: 0.75rem;
+    }
+}
+
+/* PST Time display */
+#pst-time {
+    font-family: monospace;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    background-color: rgba(255,255,255,0.1);
+} 
